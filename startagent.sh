@@ -33,7 +33,7 @@ do
 		-Djava.net.preferIPv6Addresses=true \
 		-Djava.net.preferIPv4Stack=false \
 		-jar agent.jar \
-		-url "https://${master}/computer/${agentname}/jenkins-agent.jnlp" \
+		-url "https://${master}/" \
 		-secret "${secret}" \
 		-name ${agentname} \
 		-webSocket
