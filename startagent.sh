@@ -33,7 +33,9 @@ do
 		-Djava.net.preferIPv6Addresses=true \
 		-Djava.net.preferIPv4Stack=false \
 		-jar agent.jar \
-		-jnlpUrl "https://${master}/computer/${agentname}/jenkins-agent.jnlp" \
-		-secret "${secret}"
+		-url "https://${master}/computer/${agentname}/jenkins-agent.jnlp" \
+		-secret "${secret}" \
+		-name ${agentname} \
+		-webSocket
 	/bin/sleep 30
 done
